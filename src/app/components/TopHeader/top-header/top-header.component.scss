@@ -1,6 +1,7 @@
 @use "../../../scss/colors" as *;
 
 .top-header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,6 +9,7 @@
   background: $black;
   color: $white;
   padding: 0.4rem 0;
+  height: 2rem;
 
   .header-text {
     flex: 1;
