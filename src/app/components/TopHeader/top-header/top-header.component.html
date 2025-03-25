@@ -7,7 +7,9 @@
     </button>
     <div class="dropdown-options">
       @for (language of languageList; track $index) {
-      <span class="option" (click)="selectedLanguage.set(language)">
+      <span class="option" [class]="{
+        selected: selectedLanguage() === language
+      }" (click)="selectedLanguage.set(language)">
         {{language}}
       </span>
       }
