@@ -1,0 +1,16 @@
+<div class="top-header">
+  <p class="header-text">Shop now and enjoy the best deals of the season!</p>
+  <div class="language-dropdown">
+    <button class="dropdown-btn">
+      <span> {{ selectedLanguage() }} </span>
+      <i class="fa fa-globe"></i>
+    </button>
+    <div class="dropdown-options">
+      @for (language of languageList; track $index) {
+      <span class="option" (click)="selectedLanguage.set(language)">
+        {{language}}
+      </span>
+      }
+    </div>
+  </div>
+</div>
