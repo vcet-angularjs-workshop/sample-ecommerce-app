@@ -1,4 +1,4 @@
-@use "../../../scss/colors" as *;
+@use "../../scss/colors" as *;
 
 .top-header {
   position: fixed;
@@ -9,7 +9,7 @@
   background: $black;
   color: $white;
   padding: 0.4rem 0;
-  height: 2rem;
+  height: 1.4rem;
 
   .header-text {
     flex: 1;
