@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-items-card',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './items-card.component.html',
   styleUrl: './items-card.component.scss',
 })
-export class ItemsCardComponent {}
+export class ItemsCardComponent {
+  item = input<any>([]);
+}
