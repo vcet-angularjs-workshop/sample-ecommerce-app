@@ -35,14 +35,18 @@
   }
 }
 
-.add-to-cart {
+.action-icon {
   position: absolute;
   bottom: 40px;
   right: 18px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
 
   &:hover {
     opacity: 0.4;
   }
+}
+
+.fa-trash-alt {
+  color: $red;
 }

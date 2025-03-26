@@ -8,4 +8,5 @@ import { Component, input } from '@angular/core';
 })
 export class ItemsCardComponent {
   item = input<any>([]);
+  isCartPage = input<boolean>(false);
 }
