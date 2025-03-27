@@ -1,122 +1,167 @@
 {
   "categories": [
-    { "id": 9, "title": "Westside", "logo": "/assets/westside.png" },
-    { "id": 1, "title": "Bags", "logo": "/assets/bags.png" },
-    { "id": 2, "title": "Beauty", "logo": "/assets/beauty.png" },
-    { "id": 3, "title": "Footwear", "logo": "/assets/footwear.png" },
-    { "id": 4, "title": "Jewelry", "logo": "/assets/jewelry.png" },
-    { "id": 5, "title": "Watches", "logo": "/assets/watches.png" },
-    { "id": 6, "title": "Menswear", "logo": "/assets/menswear.png" },
-    { "id": 7, "title": "Womenswear", "logo": "/assets/womenswear.png" },
-    { "id": 8, "title": "Kidswear", "logo": "/assets/kidswear.png" },
-    { "id": 10, "title": "Home & Living", "logo": "/assets/home-living.png" },
-    { "id": 11, "title": "Gadgets", "logo": "/assets/gadgets.png" }
+    {
+      "id": "9",
+      "title": "Westside",
+      "logo": "/assets/westside.png"
+    },
+    {
+      "id": "1",
+      "title": "Bags",
+      "logo": "/assets/bags.png"
+    },
+    {
+      "id": "2",
+      "title": "Beauty",
+      "logo": "/assets/beauty.png"
+    },
+    {
+      "id": "3",
+      "title": "Footwear",
+      "logo": "/assets/footwear.png"
+    },
+    {
+      "id": "4",
+      "title": "Jewelry",
+      "logo": "/assets/jewelry.png"
+    },
+    {
+      "id": "5",
+      "title": "Watches",
+      "logo": "/assets/watches.png"
+    },
+    {
+      "id": "6",
+      "title": "Menswear",
+      "logo": "/assets/menswear.png"
+    },
+    {
+      "id": "7",
+      "title": "Womenswear",
+      "logo": "/assets/womenswear.png"
+    },
+    {
+      "id": "8",
+      "title": "Kidswear",
+      "logo": "/assets/kidswear.png"
+    },
+    {
+      "id": "10",
+      "title": "Home & Living",
+      "logo": "/assets/home-living.png"
+    },
+    {
+      "id": "11",
+      "title": "Gadgets",
+      "logo": "/assets/gadgets.png"
+    }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Apple iPhone 14 Pro Max",
       "price": 129900,
       "image": "https://picsum.photos/200/300?random=1",
       "description": "Experience the latest A16 Bionic chip, 6.7-inch Super Retina XDR display, and a 48MP triple-camera system."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Samsung Galaxy S22 Ultra",
       "price": 109999,
       "image": "https://picsum.photos/200/300?random=2",
       "description": "Features a 6.8-inch Dynamic AMOLED display, 108MP quad-camera setup, and S Pen integration."
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Sony WH-1000XM5 Wireless Headphones",
       "price": 29990,
       "image": "https://picsum.photos/200/300?random=3",
       "description": "Industry-leading noise cancellation, up to 30 hours of battery life, and touch sensor controls."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Dell XPS 13 Laptop",
       "price": 144990,
       "image": "https://picsum.photos/200/300?random=4",
       "description": "13.4-inch FHD+ display, Intel Core i7 processor, 16GB RAM, and 512GB SSD."
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Nike Air Zoom Pegasus 39 Running Shoes",
       "price": 9995,
       "image": "https://picsum.photos/200/300?random=5",
       "description": "Lightweight design with responsive cushioning for everyday running comfort."
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Canon EOS R6 Mirrorless Camera",
       "price": 215995,
       "image": "https://picsum.photos/200/300?random=6",
       "description": "20.1MP full-frame sensor, 4K video recording, and in-body image stabilization."
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Apple Watch Series 8",
       "price": 45900,
       "image": "https://picsum.photos/200/300?random=7",
       "description": "Advanced health monitoring features, always-on Retina display, and customizable watch faces."
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Bose SoundLink Revolve+ Bluetooth Speaker",
       "price": 24500,
       "image": "https://picsum.photos/200/300?random=8",
       "description": "360-degree sound, water-resistant design, and up to 16 hours of playtime."
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Fitbit Charge 5 Fitness Tracker",
       "price": 14999,
       "image": "https://picsum.photos/200/300?random=9",
       "description": "Health metrics like heart rate, sleep tracking, and built-in GPS."
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Amazon Echo Dot (5th Gen)",
       "price": 4499,
       "image": "https://picsum.photos/200/300?random=10",
       "description": "Smart speaker with Alexa, improved sound quality, and compact design."
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Microsoft Surface Laptop 5",
       "price": 120000,
       "image": "https://picsum.photos/200/300?random=11",
       "description": "13.5-inch PixelSense touchscreen, Intel Core i7, 16GB RAM, 512GB SSD."
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "JBL Flip 6 Bluetooth Speaker",
       "price": 11999,
       "image": "https://picsum.photos/200/300?random=12",
       "description": "Portable waterproof speaker with 12 hours of playtime and deep bass."
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Dyson V12 Detect Slim Vacuum Cleaner",
       "price": 55900,
       "image": "https://picsum.photos/200/300?random=13",
       "description": "Powerful cordless vacuum with laser dust detection and HEPA filtration."
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Oculus Quest 2 VR Headset",
       "price": 37990,
       "image": "https://picsum.photos/200/300?random=14",
       "description": "Next-gen virtual reality with 128GB storage and immersive gaming experience."
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Razer BlackWidow V4 Pro Keyboard",
       "price": 19999,
       "image": "https://picsum.photos/200/300?random=15",
       "description": "Mechanical gaming keyboard with RGB lighting and programmable macros."
     }
-  ]
+  ],
+  "cartItems": []
 }

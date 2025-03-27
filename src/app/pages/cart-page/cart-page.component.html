@@ -3,13 +3,13 @@
         <div class="page-header">
             <h2>Cart Items</h2>
             <div class="cart-items-count">
-                <p>Total Items: <span>{{ shoppingItems().length }}</span></p>
+                <p>Total Items: <span>{{ cartService.cartItemsList().length }}</span></p>
                 <p>Total Price: <span>₹{{ totalPrice() }}</span></p>
             </div>
         </div>
       <div class="container">
-        @for (item of shoppingItems(); track $index) {
-          <app-items-card [item]="item" [isCartPage]="true"/>
+        @for (item of cartService.cartItemsList(); track $index) {
+          <app-items-card [item]="item" [isCartPage]="true" (removeFromCart)="removeFromCart(item.id)"/>
         }
       </div>
     </div>

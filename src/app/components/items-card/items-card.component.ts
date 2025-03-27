@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Product } from '../../model/products.model';
 
 @Component({
@@ -9,11 +9,13 @@ import { Product } from '../../model/products.model';
 })
 export class ItemsCardComponent {
   item = input<Product>({
-    id: 0,
+    id: '',
     title: '',
     price: 0,
     image: '',
     description: '',
   });
   isCartPage = input<boolean>(false);
+  addToCart = output();
+  removeFromCart = output();
 }

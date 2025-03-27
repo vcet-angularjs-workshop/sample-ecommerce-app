@@ -15,7 +15,7 @@
     <h2>Shopping Items</h2>
     <div class="container">
       @for (item of productService.productsList(); track item.id) {
-        <app-items-card [item]="item" />
+      <app-items-card [item]="item" (addToCart)="addToCart(item)"/>
       }
     </div>
   </div>

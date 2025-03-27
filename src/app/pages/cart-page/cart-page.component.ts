@@ -1,6 +1,6 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { ItemsCardComponent } from '../../components/items-card/items-card.component';
-import { itemsList } from '../../../mock-data';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -9,12 +9,21 @@ import { itemsList } from '../../../mock-data';
   styleUrl: './cart-page.component.scss',
 })
 export class CartPageComponent {
-  shoppingItems = signal(itemsList);
+  cartService = inject(CartService);
+
   totalPrice = computed(() => {
     let total = 0;
-    for (const product of this.shoppingItems()) {
+    for (const product of this.cartService.cartItemsList()) {
       total += product.price;
     }
     return total;
   });
+
+  removeFromCart(id: string) {
+    this.cartService.removeFromCart(id);
+  }
+
+  ngOnInit() {
+    this.cartService.loadAllCartItems();
+  }
 }
