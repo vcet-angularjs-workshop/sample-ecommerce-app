@@ -7,6 +7,7 @@
         type="text"
         class="input-field"
         placeholder=""
+        (input)="onUserNameInput($event)"
         required
       />
       <label for="inputId" class="input-label">
@@ -20,6 +21,7 @@
         type="password"
         class="input-field"
         placeholder=""
+        (input)="onPasswordInput($event)"
         required
       />
       <label for="passwordId" class="input-label">
@@ -27,6 +29,6 @@
       </label>
     </div>
     <div class="mat-input-wrapper">
-    <button type="submit" class="submit-button">Login</button>
+    <button type="submit" class="submit-button" (click)="handleLogin()">Login</button>
   </div>
   </div>
