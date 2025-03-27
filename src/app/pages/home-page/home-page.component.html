@@ -3,7 +3,7 @@
     <h2>Your Favorite Categories</h2>
     <div class="categories-container">
       <div class="categories-list">
-        @for (item of category(); track $index) {
+        @for (item of categoriesService.categoriesList(); track item.id) {
         <div class="category">
           <img [src]="item.logo" alt="{{ item.title }}" srcset="" />
         </div>
@@ -14,7 +14,7 @@
   <div class="shopping-items">
     <h2>Shopping Items</h2>
     <div class="container">
-      @for (item of shoppingItems(); track $index) {
+      @for (item of productService.productsList(); track item.id) {
         <app-items-card [item]="item" />
       }
     </div>

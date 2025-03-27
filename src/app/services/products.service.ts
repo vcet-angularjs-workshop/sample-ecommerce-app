@@ -1,9 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
+import { Product } from '../model/products.model';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductsService {
+  productsList = signal<Product[]>([]);
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) {}
+
+  loadProductsList() {
+    this.httpClient
+      .get<Product[]>('http://localhost:3000/products')
+      .subscribe((response: Product[]) => {
+        this.productsList.set(response);
+      });
+  }
 }

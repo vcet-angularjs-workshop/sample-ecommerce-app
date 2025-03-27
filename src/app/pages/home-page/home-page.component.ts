@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { ItemsCardComponent } from '../../components/items-card/items-card.component';
-import { categories, itemsList } from '../../../mock-data';
+import { CategoriesService } from '../../services/categories.service';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-home-page',
@@ -9,6 +10,11 @@ import { categories, itemsList } from '../../../mock-data';
   styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent {
-  category = signal(categories);
-  shoppingItems = signal(itemsList);
+  categoriesService = inject(CategoriesService);
+  productService = inject(ProductsService);
+
+  ngOnInit() {
+    this.categoriesService.loadAllCategories();
+    this.productService.loadProductsList();
+  }
 }
