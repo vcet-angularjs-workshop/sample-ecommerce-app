@@ -1,18 +1,17 @@
-<div class="input-container">
+<div class="login-page">
   <h2>Login</h2>
+  <form class="login-form" [formGroup]="loginForm" (ngSubmit)="handleLogin($event)">
     <div class="mat-input-wrapper">
       <input
         id="inputId"
         name="inputName"
         type="text"
         class="input-field"
-        placeholder=""
         (input)="onUserNameInput($event)"
+        formControlName="username"
         required
       />
-      <label for="inputId" class="input-label">
-        Input Label
-      </label>
+      <label for="inputId" class="input-label"> Input Label </label>
     </div>
     <div class="mat-input-wrapper">
       <input
@@ -20,15 +19,14 @@
         name="passwordName"
         type="password"
         class="input-field"
-        placeholder=""
         (input)="onPasswordInput($event)"
+        formControlName="password"
         required
       />
-      <label for="passwordId" class="input-label">
-        Password
-      </label>
+      <label for="passwordId" class="input-label"> Password </label>
     </div>
     <div class="mat-input-wrapper">
-    <button type="submit" class="submit-button" (click)="handleLogin()">Login</button>
-  </div>
-  </div>
+      <button type="submit" class="submit-button">Login</button>
+    </div>
+  </form>
+</div>

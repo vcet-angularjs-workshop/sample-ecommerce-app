@@ -1,9 +1,10 @@
 import { Component, input, output } from '@angular/core';
 import { Product } from '../../model/products.model';
+import { CapitalizePipe } from '../../pipes/capitalize.pipe';
 
 @Component({
   selector: 'app-items-card',
-  imports: [],
+  imports: [CapitalizePipe],
   templateUrl: './items-card.component.html',
   styleUrl: './items-card.component.scss',
 })
@@ -18,4 +19,8 @@ export class ItemsCardComponent {
   isCartPage = input<boolean>(false);
   addToCart = output();
   removeFromCart = output();
+
+  ngOnInit() {
+    this.addToCart.emit();
+  }
 }

@@ -4,10 +4,12 @@ import { CategoriesService } from '../../services/categories.service';
 import { ProductsService } from '../../services/products.service';
 import { CartService } from '../../services/cart.service';
 import { Product } from '../../model/products.model';
+import { CapitalizePipe } from '../../pipes/capitalize.pipe';
+import { ShowHovereffectDirective } from '../../directives/show-hovereffect.directive';
 
 @Component({
   selector: 'app-home-page',
-  imports: [ItemsCardComponent],
+  imports: [ItemsCardComponent, ShowHovereffectDirective],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
 })

@@ -6,7 +6,7 @@
     <i class="fas fa-cart-plus action-icon" (click)="addToCart.emit()"></i>
   }
   <div class="item-info">
-    <h3 class="product-title">{{ item().title }}</h3>
+    <h3 class="product-title">{{ item().title|capitalize  }}</h3>
     <p class="product-price">{{ item().price }}</p>
   </div>
 </div>
