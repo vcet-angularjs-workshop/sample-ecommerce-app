@@ -1,0 +1,28 @@
+<div class="cart-page">
+  <div class="cart-items">
+    <div class="page-header">
+      <h2>Cart Items</h2>
+      <div class="cart-items-count">
+        <p>
+          Total Items: <span>{{ cartService.cartItemsList().length }}</span>
+        </p>
+        <p>
+          Total Price: <span>₹{{ totalPrice() }}</span>
+        </p>
+      </div>
+    </div>
+    @if (cartService.cartItemsList().length > 0) {
+    <div class="container">
+      @for (item of cartService.cartItemsList(); track $index) {
+      <app-items-card
+        [item]="item"
+        [isCartPage]="true"
+        (removeFromCart)="removeFromCart(item.id)"
+      />
+      }
+    </div>
+    } @else {
+    <div class="no-data">No Items To Show</div>
+    }
+  </div>
+</div>

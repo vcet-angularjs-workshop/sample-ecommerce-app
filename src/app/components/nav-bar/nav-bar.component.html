@@ -1,0 +1,17 @@
+<div class="nav-bar">
+    <div class="nav-left">
+        <div class="brand-logo" (click)="this.router.navigateByUrl('/home')">
+            <span class="logo-v">V</span>
+            <span class="logo-text">Shopping</span>
+        </div>
+    </div>
+    <div class="nav-right">
+        <div class="user-name">
+            {{ loginService.userInfoList()?.name }}
+        </div>
+        <div class="cart-icon" (click)="this.router.navigateByUrl('/cart')">
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="logout" (click)="logout()">Logout</div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="grid-item">
+  <img [src]="item().image" alt="{{ item().id }}" class="product-image" />
+  @if ( isCartPage() ) {
+    <i class="fas fa-trash-alt action-icon" (click)="removeFromCart.emit()"></i>
+  } @else {
+    <i class="fas fa-cart-plus action-icon" (click)="addToCart.emit()"></i>
+  }
+  <div class="item-info">
+    <h3 class="product-title">{{ item().title|capitalize  }}</h3>
+    <p class="product-price">{{ item().price }}</p>
+  </div>
+</div>

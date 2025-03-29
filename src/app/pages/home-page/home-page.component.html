@@ -1,0 +1,28 @@
+<div class="home-page">
+  @if (categoriesService.categoriesList().length > 0) {
+    <div class="categories-list">
+      <h2>Your Favorite Categories</h2>
+      <div class="categories-container">
+        <div class="categories-list">
+          @for (item of categoriesService.categoriesList(); track item.id) {
+          <div class="category" >
+            <img appShowHovereffect [src]="item.logo" alt="{{ item.title}}" srcset="" />
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  }
+  <div class="shopping-items">
+    <h2>Shopping Items</h2>
+    @if (productService.productsList().length > 0 ) {
+    <div class="container">
+      @for (item of productService.productsList(); track item.id) {
+      <app-items-card [item]="item" (addToCart)="addToCart(item)" />
+      }
+    </div>
+    } @else {
+    <div class="no-data">No Items To Show</div>
+    }
+  </div>
+</div>
