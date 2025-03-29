@@ -1,6 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@use "./app/scss/colors" as *;
+// @use "./app/scss/colors" as *;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+// Basic color definitions
+$red: #ff0000;
+$blue: #0000ff;
+$green: #00ff00;
+$yellow: #ffff00;
+$white: #ffffff;
+$black: #000000;
+$gray: #808080;
+$light-gray: #d3d3d3;
+$dark-gray: #a9a9a9;
+
+// Theme colors
+$primary: #db4444;
+$secondary: #ffc107;
 
 * {
   padding: 0;
