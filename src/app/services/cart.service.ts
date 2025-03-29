@@ -11,7 +11,6 @@ export class CartService {
   constructor(private httpClient: HttpClient) {}
 
   addToCart(product: Product) {
-    console.log('Hello 123');
     this.cartItemsList.set([...this.cartItemsList(), product]);
     this.httpClient.post('http://localhost:3000/cartItems', product).subscribe(
       (response) => {
